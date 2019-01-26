@@ -10,19 +10,19 @@
 }
 
 #txt1 {
-	font-size: 17px;
+	font-size: 16px;
 	text-align: center;
 	color: white;
 }
 #txt2 {
-	font-size: 17px;
+	font-size: 16px;
 	text-align: center;
 	color: white;
 }
 
 #content{
 	position: absolute;
-	top: 3%;
+	top: 1%;
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -42,19 +42,19 @@
 }
 
 #d{
-	font-size: 20px;
+	font-size: 18px;
 }
 
 #h{
-	font-size: 20px;
+	font-size: 18px;
 }
 
 #m{
-	font-size: 20px;
+	font-size: 18px;
 }
 
 #s{
-	font-size: 20px;
+	font-size: 18px;
 }
 
 #heartTxt{
