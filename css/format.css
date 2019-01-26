@@ -1,0 +1,139 @@
+#typeDiv {
+	position: absolute;
+	top: 45%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 30%;
+	height: 10%;
+	text-align: center;
+}
+
+#txt1 {
+	font-size: 17px;
+	text-align: center;
+	color: white;
+}
+#txt2 {
+	font-size: 17px;
+	text-align: center;
+	color: white;
+}
+
+#content{
+	position: absolute;
+	top: 3%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 60%;
+	height: 20%;
+}
+
+#together{
+	font-size: 25px;
+	text-align: center;
+	color: white;
+}
+
+#timer{
+	text-align: center;
+	color: white;
+}
+
+#d{
+	font-size: 20px;
+}
+
+#h{
+	font-size: 20px;
+}
+
+#m{
+	font-size: 20px;
+}
+
+#s{
+	font-size: 20px;
+}
+
+#heartTxt{
+	position: absolute;
+	display: table;
+	vertical-align: middle;
+	top: 82%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 8%;
+	height: 8%;
+}
+
+#clickMe{
+	display: inline-block;
+	font-size: 17px;
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+
+#heart{
+	width: 100%;
+	height: 100%;
+}
+
+#button{
+	background-image: url("../pic/love.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	background-position: center;
+	transition: 0.2s;
+	width: 100%;
+	height: 100%;
+
+}
+
+#button:active {
+	width: 95%;
+	height: 95%;
+}
+
+#imgTxt{
+	position: absolute;
+	display: table;
+	vertical-align: middle;
+	top: 23%;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+	height: 50%;
+}
+
+#img{
+	display: block;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: auto;
+	height: 100%
+}
+
+#Txt{
+	display: inline-block;
+	font-size: 17px;
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+
+#tmp{
+	display: inline-block;
+	font-size: 17px;
+	width: 100%;
+	text-align: center;
+	color: white;
+}
