@@ -61,7 +61,7 @@
 	position: absolute;
 	display: table;
 	vertical-align: middle;
-	top: 82%;
+	top: 81%;
 	left: 0;
 	right: 0;
 	margin: auto;
@@ -71,7 +71,7 @@
 
 #clickMe{
 	display: inline-block;
-	font-size: 17px;
+	font-size: 16px;
 	width: 100%;
 	text-align: center;
 	color: white;
