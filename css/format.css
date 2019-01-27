@@ -42,19 +42,19 @@
 }
 
 #d{
-	font-size: 18px;
+	font-size: 19px;
 }
 
 #h{
-	font-size: 18px;
+	font-size: 19px;
 }
 
 #m{
-	font-size: 18px;
+	font-size: 19px;
 }
 
 #s{
-	font-size: 18px;
+	font-size: 19px;
 }
 
 #heartTxt{
@@ -65,8 +65,8 @@
 	left: 0;
 	right: 0;
 	margin: auto;
-	width: 8%;
-	height: 8%;
+	width: 9%;
+	height: 9%;
 }
 
 #clickMe{
@@ -90,15 +90,15 @@
 	border: none;
 	outline: none;
 	background-position: center;
-	transition: 0.2s;
+	transition: 0.1s;
 	width: 100%;
 	height: 100%;
 
 }
 
 #button:active {
-	width: 95%;
-	height: 95%;
+	width: 92%;
+	height: 92%;
 }
 
 #imgTxt{
