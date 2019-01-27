@@ -23,8 +23,8 @@ function typeWriter(text, para){
 
 var typeInterval;
 
-window.onload = function() {
-	window.onload = function(){};
+//window.onload = function() {
+//	window.onload = function(){};
    	typeInterval = setInterval(function(){
 		if(ok == 0){
 			typeWriter(text1, "txt1");
@@ -33,4 +33,4 @@ window.onload = function() {
 			typeWriter(text2, "txt2");
 		}
 	}, 100);
-};
+//};
