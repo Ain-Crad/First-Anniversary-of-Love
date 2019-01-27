@@ -3,9 +3,9 @@ btn.style.opacity = 0;
 var btnVal = 0;
 
 function showImage(){
-	console.log(imageIndex);
-	myImage.setAttribute("src", imageArray[imageIndex]);
+	//console.log(imageIndex);
 	document.getElementById("imgTxt").style.opacity = 1 - flag;
+	myImage.setAttribute("src", imageArray[imageIndex]);
 	myTxt.innerHTML = txtArray[imageIndex];
 	imageIndex++;
 	if(imageIndex >= len){
@@ -45,10 +45,10 @@ function buttonFadeIn(){
 	}
 }
 
-let k;
-for(k = 0; k < len; k++){
-	preshowImage();
-}
+//let k;
+//for(k = 0; k < len; k++){
+//	preshowImage();
+//}
 
 setInterval(function (){
 	if(ok == 3){
