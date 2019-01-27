@@ -43,10 +43,11 @@ function preshowImage(){
 
 function buttonFadeIn(){
 	if(btnVal < 1){
-		btnVal += 0.01;
+		btnVal += 0.02;
 		btn.style.opacity = btnVal;
 	}
 	else{
+		clearInterval(buttonInterval);
 		if(ok == 3){
 			ok += 1;
 		}
@@ -59,14 +60,16 @@ function event(){
 		preshowImage();
 	}
 
-	setInterval(function (){
+	imgInterval = setInterval(function (){
 		if(ok == 3){
-			setTimeout(function(){setInterval(buttonFadeIn, 200);}, 1500);
+			setTimeout(function(){buttonInterval = setInterval(buttonFadeIn, 50);}, 1500);
+			clearInterval(imgInterval);
 		}
 	}, 50);
 }
 
+var imgInterval;
+var buttonInterval;
 document.addEventListener('DOMContentLoaded', function() {
-   // your code here
    event();
 }, false);

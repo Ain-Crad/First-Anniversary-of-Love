@@ -27,24 +27,28 @@ function timer(){
 
 function fadein(){
 	if(val < 1){
-		val += 0.01;
+		val += 0.02;
 		dv.style.opacity = val;
 	}
 	else{
+		clearInterval(fadeinInterval);
 		if(ok == 2){
 			ok += 1;
 		}
 	}
 }
 
+var fadeInterval;
+var fadeinInterval;
 
 document.addEventListener('DOMContentLoaded', function() {
     // your code here
     timer();
 	setInterval(timer, 1000);
-	setInterval(function(){
+	fadeInterval = setInterval(function(){
 		if(ok == 2){
-			setInterval(fadein, 100);
+			clearInterval(fadeInterval);
+			fadeinInterval = setInterval(fadein, 50);
 		}
 	}, 50)
 }, false);

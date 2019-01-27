@@ -5,6 +5,9 @@ let text2 = "Today is the Big Day."
 let speed = 100;
 
 function typeWriter(text, para){
+	if(ok == 2){
+		clearInterval(typeInterval);
+	}
 	if(i < text.length){
 		document.getElementById(para).innerHTML += text.charAt(i);
 		i++;
@@ -18,9 +21,10 @@ function typeWriter(text, para){
 	}
 }
 
+var typeInterval;
+
 document.addEventListener('DOMContentLoaded', function() {
-   // your code here
-   	setInterval(function(){
+   	typeInterval = setInterval(function(){
 		if(ok == 0){
 			typeWriter(text1, "txt1");
 		}
