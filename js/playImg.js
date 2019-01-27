@@ -19,6 +19,7 @@ function play(){
 		myImage.setAttribute("src", "");
 		myTxt.innerHTML = "";
 		imageIndex = 0;
+		clearInterval(showImageInterval);
 	}
 	flag = 1 - flag;
 	document.getElementById("typeDiv").style.opacity = flag;
@@ -42,7 +43,7 @@ function preshowImage(){
 
 function buttonFadeIn(){
 	if(btnVal < 1){
-		btnVal += 0.02;
+		btnVal += 0.025;
 		btn.style.opacity = btnVal;
 	}
 	else{
@@ -53,11 +54,14 @@ function buttonFadeIn(){
 	}
 }
 
+
+
 function event(){
-	let k;
-	for(k = 0; k < len; k++){
-		preshowImage();
-	}
+	//let k;
+	//for(k = 0; k < len; k++){
+	//	preshowImage();
+	//}
+	showImageInterval = setInterval(preshowImage, 100);
 
 	imgInterval = setInterval(function (){
 		if(ok == 3){
@@ -67,6 +71,7 @@ function event(){
 	}, 50);
 }
 
+var showImageInterval;
 var imgInterval;
 var buttonInterval;
 document.addEventListener('DOMContentLoaded', function() {

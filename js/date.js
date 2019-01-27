@@ -27,7 +27,7 @@ function timer(){
 
 function fadein(){
 	if(val < 1){
-		val += 0.02;
+		val += 0.025;
 		dv.style.opacity = val;
 	}
 	else{
