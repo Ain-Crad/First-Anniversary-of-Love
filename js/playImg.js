@@ -14,10 +14,6 @@ function showImage(){
 }
 
 function play(){
-	if(t == 0){
-		imageIndex = 0;
-		myImage.setAttribute("src", "");
-	}
 	flag = 1 - flag;
 	document.getElementById("typeDiv").style.opacity = flag;
 	if(t == 0){
