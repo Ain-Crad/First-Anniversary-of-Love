@@ -3,15 +3,18 @@ btn.style.opacity = 0;
 var btnVal = 0;
 
 function showImage(){
-myImage.setAttribute("src", imageArray[imageIndex]);
-myTxt.innerHTML = txtArray[imageIndex];
-imageIndex++;
+	myImage.setAttribute("src", imageArray[imageIndex]);
+	myTxt.innerHTML = txtArray[imageIndex];
+	imageIndex++;
 	if(imageIndex >= len){
 		imageIndex = 0;
 	}
 }
 
 function play(){
+	if(t == 0){
+		imageIndex = 0;
+	}
 	flag = 1 - flag;
 	document.getElementById("typeDiv").style.opacity = flag;
 	document.getElementById("imgTxt").style.opacity = 1 - flag;
@@ -20,6 +23,16 @@ function play(){
 		setInterval(showImage, 2500);
 	}
 	t++;
+}
+
+function preshowImage(){
+	document.getElementById("imgTxt").style.opacity = 0;
+	myImage.setAttribute("src", imageArray[imageIndex]);
+	myTxt.innerHTML = txtArray[imageIndex];
+	imageIndex++;
+	if(imageIndex >= len){
+		imageIndex = 0;
+	}
 }
 
 function buttonFadeIn(){
@@ -34,6 +47,7 @@ function buttonFadeIn(){
 	}
 }
 
+preshowImage();
 setInterval(function (){
 	if(ok == 3){
 		setTimeout(function(){setInterval(buttonFadeIn, 200);}, 2000);
