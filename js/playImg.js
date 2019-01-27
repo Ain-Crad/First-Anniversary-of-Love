@@ -48,7 +48,7 @@ function buttonFadeIn(){
 }
 
 preshowImage();
-for(int i = 1; i < len; i++){
+for(let i = 1; i < len; i++){
 	setTimeout(preshowImage, 100);
 }
 
