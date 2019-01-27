@@ -205,9 +205,8 @@ function animate() {
     requestAnimationFrame(animate)
 }
 
-setInterval(function(){
-    window.onload = function() {
-        init()
-        animate()
-    };
-}, 50);
+
+document.onload = function() {
+    init()
+    animate()
+};
