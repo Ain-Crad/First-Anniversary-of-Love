@@ -18,11 +18,14 @@ function typeWriter(text, para){
 	}
 }
 
-setInterval(function(){
-	if(ok == 0){
-		typeWriter(text1, "txt1");
-	}
-	else if(ok == 1){
-		typeWriter(text2, "txt2");
-	}
-}, 100)
+document.addEventListener('DOMContentLoaded', function() {
+   // your code here
+   	setInterval(function(){
+		if(ok == 0){
+			typeWriter(text1, "txt1");
+		}
+		else if(ok == 1){
+			typeWriter(text2, "txt2");
+		}
+	}, 100);
+}, false);

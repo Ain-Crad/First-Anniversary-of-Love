@@ -37,10 +37,15 @@ function fadein(){
 	}
 }
 
-timer();
-setInterval(timer, 1000);
-setInterval(function(){
-	if(ok == 2){
-		setInterval(fadein, 100);
-	}
-}, 50)
+
+document.addEventListener('DOMContentLoaded', function() {
+    // your code here
+    timer();
+	setInterval(timer, 1000);
+	setInterval(function(){
+		if(ok == 2){
+			setInterval(fadein, 100);
+		}
+	}, 50)
+}, false);
+
