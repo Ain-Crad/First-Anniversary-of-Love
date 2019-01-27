@@ -48,10 +48,9 @@ function buttonFadeIn(){
 }
 
 preshowImage();
-let k;
-for(k = 1; k < len; k++){
-	setTimeout(preshowImage, 150);
-}
+setTimeout(preshowImage, 500);
+setTimeout(preshowImage, 500);
+setTimeout(preshowImage, 500);
 
 setInterval(function (){
 	if(ok == 3){
