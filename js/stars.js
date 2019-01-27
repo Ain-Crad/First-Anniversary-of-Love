@@ -207,6 +207,7 @@ function animate() {
 
 
 window.onload = function() {
+    alert('page loaded')
     init()
     animate()
 };
