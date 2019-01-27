@@ -205,7 +205,7 @@ function animate() {
     requestAnimationFrame(animate)
 }
 
-document.addEventListener('load', function() {
+window.onload = function() {
     init()
     animate()
-}, false);
+};
