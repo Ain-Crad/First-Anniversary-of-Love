@@ -4,7 +4,6 @@ btn.style.opacity = 0;
 var btnVal = 0;
 
 function showImage(){
-	//console.log(imageIndex);
 	document.getElementById("imgTxt").style.opacity = 0;
 	myImage.setAttribute("src", imageArray[imageIndex]);
 	myTxt.innerHTML = txtArray[imageIndex];
@@ -25,7 +24,7 @@ function play(){
 	document.getElementById("typeDiv").style.opacity = flag;
 	document.getElementById("imgTxt").style.opacity = 1 - flag;
 	if(t == 0){
-		setTimeout(showImage, 1000);
+		//setTimeout(showImage, 1000);
 		setInterval(showImage, 2500);
 	}
 	t++;
