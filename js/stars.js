@@ -205,7 +205,7 @@ function animate() {
     requestAnimationFrame(animate)
 }
 
-setInterval(function{
+setInterval(function(){
     window.onload = function() {
         init()
         animate()
