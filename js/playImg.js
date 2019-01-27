@@ -46,10 +46,10 @@ function buttonFadeIn(){
 	}
 }
 
-//let k;
-//for(k = 0; k < len; k++){
-//	preshowImage();
-//}
+let k;
+for(k = 0; k < len; k++){
+	preshowImage();
+}
 
 setInterval(function (){
 	if(ok == 3){
