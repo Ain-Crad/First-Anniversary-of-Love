@@ -22,7 +22,7 @@ function typeWriter(text, para){
 }
 
 var typeInterval;
-/*
+
 window.onload = function() {
    	typeInterval = setInterval(function(){
 		if(ok == 0){
@@ -33,4 +33,3 @@ window.onload = function() {
 		}
 	}, 100);
 };
-*/
