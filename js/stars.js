@@ -206,7 +206,7 @@ function animate() {
 }
 
 
-document.onload = function() {
+window.onload = function() {
     init()
     animate()
 };

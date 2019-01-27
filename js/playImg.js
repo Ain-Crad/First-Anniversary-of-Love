@@ -74,6 +74,6 @@ function event(){
 var showImageInterval;
 var imgInterval;
 var buttonInterval;
-window.onload = function() {
-   event();
-};
+//window.onload = function() {
+//   event();
+//};

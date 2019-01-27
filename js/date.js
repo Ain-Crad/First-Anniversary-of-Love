@@ -40,7 +40,7 @@ function fadein(){
 
 var fadeInterval;
 var fadeinInterval;
-
+/*
 window.onload = function() {
     // your code here
     timer();
@@ -52,4 +52,4 @@ window.onload = function() {
 		}
 	}, 50)
 };
-
+*/
