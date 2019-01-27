@@ -47,10 +47,10 @@ function buttonFadeIn(){
 	}
 }
 
-preshowImage();
-setTimeout(preshowImage, 500);
-setTimeout(preshowImage, 500);
-setTimeout(preshowImage, 500);
+//preshowImage();
+//setTimeout(preshowImage, 500);
+//setTimeout(preshowImage, 500);
+//setTimeout(preshowImage, 500);
 
 setInterval(function (){
 	if(ok == 3){
