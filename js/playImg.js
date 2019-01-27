@@ -1,3 +1,4 @@
+
 var btn = document.getElementById("heartTxt");
 btn.style.opacity = 0;
 var btnVal = 0;
@@ -52,13 +53,20 @@ function buttonFadeIn(){
 	}
 }
 
-let k;
-for(k = 0; k < len; k++){
-	preshowImage();
+function event(){
+	let k;
+	for(k = 0; k < len; k++){
+		preshowImage();
+	}
+
+	setInterval(function (){
+		if(ok == 3){
+			setTimeout(function(){setInterval(buttonFadeIn, 200);}, 1500);
+		}
+	}, 50);
 }
 
-setInterval(function (){
-	if(ok == 3){
-		setTimeout(function(){setInterval(buttonFadeIn, 200);}, 1500);
-	}
-}, 50)
+document.addEventListener('DOMContentLoaded', function() {
+   // your code here
+   event();
+}, false);
