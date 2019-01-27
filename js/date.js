@@ -41,7 +41,7 @@ function fadein(){
 var fadeInterval;
 var fadeinInterval;
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('load', function() {
     // your code here
     timer();
 	setInterval(timer, 1000);

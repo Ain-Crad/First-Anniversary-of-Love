@@ -23,7 +23,7 @@ function typeWriter(text, para){
 
 var typeInterval;
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('load', function() {
    	typeInterval = setInterval(function(){
 		if(ok == 0){
 			typeWriter(text1, "txt1");

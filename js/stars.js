@@ -205,7 +205,7 @@ function animate() {
     requestAnimationFrame(animate)
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('load', function() {
     init()
     animate()
 }, false);
