@@ -57,10 +57,7 @@ function buttonFadeIn(){
 
 
 function event(){
-	//let k;
-	//for(k = 0; k < len; k++){
-	//	preshowImage();
-	//}
+
 	showImageInterval = setInterval(preshowImage, 100);
 
 	imgInterval = setInterval(function (){
@@ -74,6 +71,5 @@ function event(){
 var showImageInterval;
 var imgInterval;
 var buttonInterval;
-//window.onload = function() {
-//   event();
-//};
+
+event();

@@ -40,16 +40,12 @@ function fadein(){
 
 var fadeInterval;
 var fadeinInterval;
-/*
-window.onload = function() {
-    // your code here
-    timer();
-	setInterval(timer, 1000);
-	fadeInterval = setInterval(function(){
-		if(ok == 2){
-			clearInterval(fadeInterval);
-			fadeinInterval = setInterval(fadein, 50);
-		}
-	}, 50)
-};
-*/
+
+timer();
+setInterval(timer, 1000);
+fadeInterval = setInterval(function(){
+	if(ok == 2){
+		clearInterval(fadeInterval);
+		fadeinInterval = setInterval(fadein, 50);
+	}
+}, 50)
