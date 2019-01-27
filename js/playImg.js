@@ -48,6 +48,8 @@ function buttonFadeIn(){
 }
 
 preshowImage();
+setTimeout(preshowImage, 1000);
+setTimeout(preshowImage, 1000);
 setInterval(function (){
 	if(ok == 3){
 		setTimeout(function(){setInterval(buttonFadeIn, 200);}, 1500);
