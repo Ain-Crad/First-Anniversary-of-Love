@@ -4,10 +4,10 @@ btn.style.opacity = 0;
 var btnVal = 0;
 
 function showImage(){
-	document.getElementById("imgTxt").style.opacity = 0;
+	//document.getElementById("imgTxt").style.opacity = 0;
 	myImage.setAttribute("src", imageArray[imageIndex]);
 	myTxt.innerHTML = txtArray[imageIndex];
-	document.getElementById("imgTxt").style.opacity = 1 - flag;
+	//document.getElementById("imgTxt").style.opacity = 1 - flag;
 	imageIndex++;
 	if(imageIndex >= len){
 		imageIndex = 0;
